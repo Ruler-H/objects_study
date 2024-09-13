@@ -1,6 +1,6 @@
 package chapter2.domain;
 
-public class AmountDiscountPolicy extends DiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy{
 
     private Money discountAmount;
 
@@ -9,8 +9,7 @@ public class AmountDiscountPolicy extends DiscountPolicy {
         this.discountAmount = discountAmount;
     }
 
-    @Override
-    protected Money getDiscountAmount(Screening screening) {
+    public Money getDiscountAmount(Screening screening) {
         return discountAmount;
     }
 }

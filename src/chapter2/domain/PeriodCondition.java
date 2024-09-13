@@ -3,7 +3,7 @@ package chapter2.domain;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
-public class PeriodCondition implements DiscountCondition {
+public class PeriodCondition extends DefaultDiscountPolicy {
     private DayOfWeek dayOfWeek;
     private LocalTime startTime;
     private LocalTime endTime;
