@@ -32,5 +32,8 @@ public class Main {
                 Duration.ofMinutes(210),
                 Money.wons(10000),
                 new NoneDiscountPolicy());
+
+        Movie movie1 = new ADM();
+        Movie movie1 = new PDM();
     }
 }
